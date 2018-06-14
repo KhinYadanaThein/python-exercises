@@ -1,6 +1,11 @@
 def break_words(stuff):
+<<<<<<< HEAD
     """This function will brake up words for us."""
     words = stuff.split('')
+=======
+    """This function will break up words for us."""
+    words = stuff.split(' ')
+>>>>>>> aea241ed94d162b5ee7a7c2d5a66798bfffbefe4
     return words
 
 def sort_words(words):
@@ -18,11 +23,19 @@ def print_last_word(words):
     print(word)
 
 def sort_sentence(sentence):
+<<<<<<< HEAD
     """Takes in a full sentence and returns the sorted words."""
     words = break_words(sentence)
     return sort_words(words)
 
 def print_first_and_last(setence):
+=======
+    """Takes in a full sentece and returns the sorted words."""
+    words = break_words(sentence)
+    return sort_words(words)
+
+def print_first_and_last(sentence):
+>>>>>>> aea241ed94d162b5ee7a7c2d5a66798bfffbefe4
     """Prints the first and last words of the sentence."""
     words = break_words(sentence)
     print_first_word(words)
@@ -33,3 +46,7 @@ def print_first_and_last_sorted(sentence):
     words = sort_sentence(sentence)
     print_first_word(words)
     print_last_word(words)
+<<<<<<< HEAD
+=======
+
+>>>>>>> aea241ed94d162b5ee7a7c2d5a66798bfffbefe4
