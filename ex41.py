@@ -20,13 +20,13 @@ PHRASES = {
         "From *** get the *** attribute and set it to '***'." 
         }
 
-# do they want to drill phrases first 
+
 if len(sys.argv) == 2 and sys.argv[1] == "english":
     PHRASE_FIRST = True 
 else: 
     PHRASE_FIRST = False
 
-# load up the words from the website 
+
 for word in urlopen(WORD_URL).readlines(): 
     WORDS.append(str(word.strip(), encoding="utf-8"))
 
@@ -46,15 +46,15 @@ random.sample(WORDS, snippet.count("%%%"))]
     for sentence in snippet, phrase: 
         result = sentence[:]
 
-# fake class names 
+
         for word in class_names: 
             result = result.replace("%%%", word, 1)
 
-# fake other names
+
         for word in other_names: 
             result = result.replace("***", word, 1)
 
-# fake parameter lists 
+
         for word in param_names: 
             result = result.replace("@@@", word, 1)
 
@@ -63,7 +63,7 @@ random.sample(WORDS, snippet.count("%%%"))]
     return results
 
 
-# keep going until they hit CTRL-D 
+ 
 try: 
     while True: 
         snippets = list(PHRASES.keys()) 
