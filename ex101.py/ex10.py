@@ -1,5 +1,5 @@
-tabby_dog = "\tI'm tabbed in."
-persian_dog="I'm split\non a line."
+tabby_rat = "\tI'm tabbed in."
+persian_rat="I'm split\non a line."
 backslash_dog= "I'm \\ a \\ dog."
 
 fat_dog="""
